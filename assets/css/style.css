@@ -801,6 +801,7 @@ body.nav-active {
   height: 55px;
   padding-inline: 25px 60px;
   border: 1px solid var(--bg-gainsboro);
+  border-radius: var(--radius-pill);
   color: var(--text-gunmetal);
 }
 
@@ -810,6 +811,49 @@ body.nav-active {
 
 .input-field:focus {
   border-color: var(--bg-majorelle-blue);
+}
+
+.input-btn {
+  width: 45px;
+  height: 45px;
+  background-color: var(--bg-majorelle-blue);
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  transition: var(--transition-1);
+  color: var(--text-white);
+}
+
+.input-btn ion-icon {
+  transform: translateX(-2px) rotate(45deg);
+}
+
+.input-btn:is(:hover, :focus-visible) {
+  background-color: var(--bg-ocean-blue);
+}
+
+.footer-bottom {
+  padding-block: 30px;
+  border-block-start: 1px solid var(--border-gainsboro);
+}
+
+.copyright {
+  margin-block-end: 20px;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: var(--text-majorelle-blue);
+  font-weight: var(--weight-medium);
+}
+
+.footer-bottom-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
 }
 
 /*-----------------------------------*\
